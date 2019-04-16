@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.jobtracker.SplashScreen"
+        android:label="splash_screen"
+        tools:layout="@layout/splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_jobList"
+            app:destination="@id/jobList"
+            app:popUpTo="@+id/navgraph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobList"
+        android:name="com.example.jobtracker.JobList"
+        android:label="joblist"
+        tools:layout="@layout/joblist" >
+        <action
+            android:id="@+id/action_jobList_to_addJob"
+            app:destination="@id/addJob" />
+        <action
+            android:id="@+id/action_jobList_to_info2"
+            app:destination="@id/info2" />
+        <argument android:name="info" />
+    </fragment>
+    <fragment
+        android:id="@+id/addJob"
+        android:name="com.example.jobtracker.AddJob"
+        android:label="addjob"
+        tools:layout="@layout/addjob" >
+        <action
+            android:id="@+id/action_addJob_to_jobList"
+            app:destination="@id/jobList"
+            app:popUpTo="@+id/navgraph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.example.jobtracker.Info"
+        android:label="info"
+        tools:layout="@layout/info" >
+        <action
+            android:id="@+id/action_info2_to_jobList2"
+            app:destination="@id/jobList"
+            app:popUpTo="@+id/navgraph" />
+    </fragment>
+</navigation>

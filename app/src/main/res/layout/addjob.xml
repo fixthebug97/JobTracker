@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:hint="Enter Job Title"
+    android:background="@drawable/edittext"
+    android:id="@+id/AddJobTitle"
+    android:textColorHint="#77b1ad"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColorHint="#77b1ad"
+        android:layout_margin="20dp"
+android:layout_below="@+id/AddJobTitle"
+        android:hint="Enter Company Name"
+        android:background="@drawable/edittext"
+
+        android:id="@+id/AddJobLocation"
+
+        />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:hint="Enter Date"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/AddJobLocation"
+        android:id="@+id/AddJobDate"
+        android:textColorHint="#77b1ad"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/AddJobDate"
+        android:layout_below="@id/AddJobLocation"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/calender"
+        android:id="@+id/calender"
+        />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+        android:layout_below="@+id/AddJobDate"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:hint="Enter Job URL"
+    android:textColorHint="#77b1ad"
+
+    android:id="@+id/AddJObURL"
+    android:background="@drawable/edittext"
+    />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:hint="Enter Job Status"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/AddJObURL"
+
+        android:id="@+id/AddStatus"
+        android:textColorHint="#77b1ad"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/AddJObURL"
+        android:layout_margin="20dp"
+
+android:layout_toRightOf="@+id/AddStatus"
+        android:textColorHint="#77b1ad"
+        android:id="@+id/AddJObStatus"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="ADD"
+        android:layout_below="@+id/AddJObStatus"
+        android:background="@drawable/textview"
+        android:textSize="20sp"
+        android:id="@+id/Addjobs"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</RelativeLayout>

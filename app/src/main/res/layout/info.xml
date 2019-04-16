@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+
+            android:enabled="false"
+            android:cursorVisible="false"
+
+            android:gravity="left"
+            android:hint="Enter Job Title"
+
+            android:id="@+id/AddJobTitle"
+            android:textColorHint="#77b1ad"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="left"
+            android:textColorHint="#77b1ad"
+
+
+
+            android:enabled="false"
+            android:cursorVisible="false"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/AddJobTitle"
+            android:hint="Enter Company Name"
+
+            android:id="@+id/AddJobLocation"
+
+            />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            android:gravity="left"
+            android:layout_margin="20dp"
+            android:hint="Enter Date"
+
+            android:layout_below="@+id/AddJobLocation"
+
+            android:enabled="false"
+            android:cursorVisible="false"
+            android:id="@+id/AddJobDate"
+            android:textColorHint="#77b1ad"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/AddJobDate"
+            android:layout_below="@id/AddJobLocation"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:background="@drawable/calender"
+            android:id="@+id/calender"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/AddJobDate"
+
+            android:textAlignment="viewStart"
+            android:layout_margin="20dp"
+            android:hint="Enter Job URL"
+            android:textColorHint="#77b1ad"
+
+            android:enabled="false"
+            android:cursorVisible="false"
+            android:id="@+id/AddJObURL"
+
+            />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/AddJobDate"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/AddJObURL"
+            android:layout_margin="20dp"
+            android:id="@+id/navigate"
+            android:background="@drawable/navigate"
+            />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            android:gravity="left"
+            android:layout_margin="20dp"
+            android:hint="Enter Job Status"
+
+            android:layout_below="@+id/AddJObURL"
+
+            android:enabled="false"
+            android:cursorVisible="false"
+            android:id="@+id/AddStatus"
+            android:textColorHint="#77b1ad"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/AddJObURL"
+            android:layout_margin="20dp"
+android:visibility="gone"
+            android:layout_toRightOf="@+id/AddStatus"
+            android:textColorHint="#77b1ad"
+            android:id="@+id/AddJObStatus"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:text="Update"
+            android:layout_below="@+id/AddStatus"
+            android:background="@drawable/textview"
+            android:textSize="20sp"
+            android:id="@+id/UpdateJobs"
+           android:layout_margin="20dp"
+            android:visibility="gone"
+
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="20dp"
+            android:text="Delete"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/AddStatus"
+            android:background="@drawable/textview"
+            android:textSize="20sp"
+
+            android:id="@+id/DeleteJobs"
+
+            android:visibility="gone"
+
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Update"
+            android:scaleType="center"
+            android:layout_alignParentRight="true"
+            android:layout_margin="40dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/editicon"
+            app:maxImageSize="40dp"
+
+            />
+
+    </RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JobTracker</string>
+    <string-array name="statusArray">
+        <item>Open</item>
+        <item>Close</item>
+    </string-array>
+
+
+</resources>
